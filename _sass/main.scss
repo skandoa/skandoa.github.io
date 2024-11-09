@@ -1,7 +1,88 @@
 .current {
-    color: green;
+    color: #00bf63;
   }
+
+.not-current {
+    color:white;
+}
 
 .main {
   background-color: #230069;
+  display: flex;
+  justify-content: center;
+}
+
+.tab-box {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #160041;
+  border: 2px solid #00bf63;
+  border-radius: 10px;
+  padding:10px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color:white;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  color:white;
+}
+
+div {
+  font-family: Montserrat, sans-serif;
+}
+
+.center-text {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  font-style: italic;
+  margin:3em;
+  padding:1em;
+  border: 2px dashed white;
+  border-radius: 10px;
+}
+
+.paragraph{
+  text-align: justify;
+  color: white;
+  font-size: 1.5em;
+  padding:1em;
+  border: 2px dashed #00bf63;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left:0px;
+
+}
+
+li{
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color:white;
+  border: 2px solid #00bf63;
+  border-radius: 10px;
+  bottom:3em;
+  margin:1em;
+  padding:0.8em;
+  padding-bottom: 0.6em;
+}
+
+li p{
+  font-size: 0.8em;
+}
+
+a {
+  color: #00bf63;
 }

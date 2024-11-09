@@ -1,0 +1,42 @@
+---
+layout: default
+title: Game projects
+---
+
+<ul>
+  {% for gameproject in site.gameprojects_highlights %}
+
+  <li style="display: flex;flex-direction: row; gap: 1em;">
+    <a href="{{ gameproject.url }}" style="align-content: center;">
+      <img src="assets\images\projects\{{gameproject.filename}}\{{gameproject.imgname}}" style="max-width:6em; max-height: fit-content;">
+    </a>
+      
+      <div style="display: flex;flex-direction: column; justify-content: center; ">
+        <a href="{{ gameproject.url }}">{{ gameproject.name }}</a>
+        <p>{{ gameproject.description }}</p>
+      </div>
+      
+    </li>
+
+  {% endfor %}
+</ul>
+
+
+<ul>
+  {% for gameproject in site.gameprojects %}
+
+    <li style="display: flex;flex-direction: row; gap: 1em;">
+      <a href="{{ gameproject.url }}" style="align-content: center;">
+        <img src="assets\images\projects\{{gameproject.filename}}\{{gameproject.imgname}}" style="max-width:6em; max-height: fit-content;">
+      </a>
+        
+        <div style="display: flex;flex-direction: column; justify-content: center; ">
+          <a href="{{ gameproject.url }}">{{ gameproject.name }}</a>
+          <p>{{ gameproject.description }}</p>
+        </div>
+        
+
+    </li>
+
+  {% endfor %}
+</ul>
