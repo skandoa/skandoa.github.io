@@ -7,44 +7,52 @@ platform: ["Web"]
 description: "This prototype was made for the Ice Cream Jam by Christian Pulieri."
 layout: post
 ---
-<div style="display: flex; flex-direction: row; gap:4em; justify-content: center; align-items: flex-end;">
+<div style="display: flex; flex-direction: column; gap:4em; justify-content: center; align-items: flex-center;">
 
-    <div style="display: flex; flex-direction:column; gap:2px">
-        <div style="font-family: Montserrat, sans-serif; color:white;">
-            Type
+        <div style="display: flex; flex-direction: row; align-items: flex-end; justify-content: center;">
+
+            <div style="display: flex; flex-direction:column; gap:2px">
+                <div style="font-family: Montserrat, sans-serif; color:white;">
+                    Type
+                </div>
+                <p class="paragraph" style="margin: 0px;  justify-items: left;">     
+                    {% for t in page.type %}
+                    {{ t }}{% if forloop.index != page.type.size %}, </nobr> {% endif %}
+                    {% endfor %}
+                </p>
+            </div>
+            
+            <div style="display: flex; flex-direction:column; gap:2px">
+                <div style="font-family: Montserrat, sans-serif; color:white;">
+                    Platform
+                </div>
+                <p class="paragraph" style="width:fit-content; margin: 0px;">     
+                    {% for p in page.platform %}
+                    {{ p }}{% if forloop.index != page.platform.size %}, </nobr> {% endif %}
+                    {% endfor %}
+                </p>
+            </div>
+            
+
         </div>
-        <p class="paragraph" style="width:fit-content; margin: 0px;">     
-            {% for t in page.type %}
-            {{ t }}{% if forloop.index != page.type.size %}, </nobr> {% endif %}
-            {% endfor %}
-        </p>
-    </div>
+            
+        <div style="display:flex; flex-direction: row; align-items: flex-center; justify-content: center;">  
+            <a class="button" href="https://macjones.itch.io/creme-glacee" style="font-size: 1.2em;">
+                PLAY GAME
+            </a>
 
-    <div style="display: flex; flex-direction:column; gap:2px">
-        <div style="font-family: Montserrat, sans-serif; color:white;">
-            Platform
+            <a class="button" href="https://skando.itch.io/creme-glace-assets" style="font-size: 1.2em;">
+                Download Assets
+            </a>
+            
+            <a class="button" href="https://docs.google.com/document/d/1rfBb2TIDexTJwa453uZLkUeK14uds4kZoZISYp7g6tw/edit?usp=sharing" style="font-size: 1.2em;">
+                See GDD
+            </a>
+            
+            <a class="button" href="https://docs.google.com/spreadsheets/d/1yeRVsWPW59QZVLWzzFMzgNuNOiQzNWGRq21uJM4Doyg/edit?usp=sharing" style="font-size: 1.2em;">
+                See Data Sheet
+            </a>
         </div>
-        <p class="paragraph" style="width:fit-content; margin: 0px;">     
-            {% for p in page.platform %}
-            {{ p }}{% if forloop.index != page.platform.size %}, </nobr> {% endif %}
-            {% endfor %}
-        </p>
-    </div>
-
-    <a class="button" href="https://macjones.itch.io/creme-glacee">
-        PLAY GAME
-    </a>
-
-    <a class="button" href="https://skando.itch.io/creme-glace-assets">
-        Download Assets
-    </a>
-
-    <a class="button" href="https://docs.google.com/document/d/1rfBb2TIDexTJwa453uZLkUeK14uds4kZoZISYp7g6tw/edit?usp=sharing">
-        See GDD
-    </a>
-
-    <a class="button" href="https://docs.google.com/spreadsheets/d/1yeRVsWPW59QZVLWzzFMzgNuNOiQzNWGRq21uJM4Doyg/edit?usp=sharing">
-        See Data Sheet
-    </a>
+        
 
 </div>
