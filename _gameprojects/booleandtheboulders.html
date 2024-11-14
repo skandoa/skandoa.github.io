@@ -2,9 +2,41 @@
 name: "Boole and the Boulders"
 filename: "booleandtheboulders"
 imgname: "booleandtheboulders.png"
-type: ["Game jam", "Casual"]
+type: ["Game jam","Arcade", "Casual"]
 platform: ["Web"]
 description: "This game was made for the 28th edition of the Legacy Mob Game Jam that lasted five days. The theme was Arcade."
 layout: post
 ---
-Ted has been eating fruit since he was baby.
+<div style="display: flex; flex-direction: row; gap:4em; justify-content: center; align-items: flex-end;">
+
+    <div style="display: flex; flex-direction:column; gap:2px">
+        <div style="font-family: Montserrat, sans-serif; color:white;">
+            Type
+        </div>
+        <p class="paragraph" style="width:fit-content; margin: 0px;">     
+            {% for t in page.type %}
+            {{ t }}{% if forloop.index != page.type.size %}, </nobr> {% endif %}
+            {% endfor %}
+        </p>
+    </div>
+
+    <div style="display: flex; flex-direction:column; gap:2px">
+        <div style="font-family: Montserrat, sans-serif; color:white;">
+            Platform
+        </div>
+        <p class="paragraph" style="width:fit-content; margin: 0px;">     
+            {% for p in page.platform %}
+            {{ p }}{% if forloop.index != page.platform.size %}, </nobr> {% endif %}
+            {% endfor %}
+        </p>
+    </div>
+
+    <a class="button" href="https://remiscan.itch.io/boole-and-the-boulders">
+        PLAY GAME
+    </a>
+
+    <a class="button" href="https://skando.itch.io/boole-and-the-boulders-assets">
+        Download Assets
+    </a>
+
+</div>

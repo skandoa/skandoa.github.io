@@ -2,9 +2,37 @@
 name: "Frogzone"
 filename: "frogzone"
 imgname: "frogzone.webp"
-type: ["Game jam","Web"]
+type: ["Game jam","Shooter","Puzzle"]
 platform: ["Web"]
 description: "This game was made for the 2021 Game Maker's Toolkit game jam joined by more than 20k people. The theme was Joined Together."
 layout: post
 ---
-Ted has been eating fruit since he was baby.
+<div style="display: flex; flex-direction: row; gap:4em; justify-content: center; align-items: flex-end;">
+
+    <div style="display: flex; flex-direction:column; gap:2px">
+        <div style="font-family: Montserrat, sans-serif; color:white;">
+            Type
+        </div>
+        <p class="paragraph" style="width:fit-content; margin: 0px;">     
+            {% for t in page.type %}
+            {{ t }}{% if forloop.index != page.type.size %}, </nobr> {% endif %}
+            {% endfor %}
+        </p>
+    </div>
+
+    <div style="display: flex; flex-direction:column; gap:2px">
+        <div style="font-family: Montserrat, sans-serif; color:white;">
+            Platform
+        </div>
+        <p class="paragraph" style="width:fit-content; margin: 0px;">     
+            {% for p in page.platform %}
+            {{ p }}{% if forloop.index != page.platform.size %}, </nobr> {% endif %}
+            {% endfor %}
+        </p>
+    </div>
+
+    <a class="button" href="https://aviv-youker-harel.itch.io/frogzone">
+        PLAY GAME
+    </a>
+
+</div>
