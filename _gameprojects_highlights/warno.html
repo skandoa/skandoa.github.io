@@ -1,0 +1,71 @@
+---
+name: "WARNO"
+filename: "warno"
+imgname: "warno.jpg"
+type: ["RTS"]
+platform: ["PC"]
+description: "My work spanned throughout all stages of map production, from shaping the forests and roads, to creating new structures."
+layout: post
+---
+<div style="display: flex; flex-direction: row; gap:4em; justify-content: center; align-items: flex-end;">
+
+    <div style="display: flex; flex-direction:column; gap:2px">
+        <div style="font-family: Montserrat, sans-serif; color:white;">
+            Type
+        </div>
+        <p class="paragraph" style="width:fit-content; margin: 0px;">     
+            {% for t in page.type %}
+            {{ t }}{% if forloop.index != page.type.size %}, </nobr> {% endif %}
+            {% endfor %}
+        </p>
+    </div>
+
+    <div style="display: flex; flex-direction:column; gap:2px">
+        <div style="font-family: Montserrat, sans-serif; color:white;">
+            Platform
+        </div>
+        <p class="paragraph" style="width:fit-content; margin: 0px;">     
+            {% for p in page.platform %}
+            {{ p }}{% if forloop.index != page.platform.size %}, </nobr> {% endif %}
+            {% endfor %}
+        </p>
+    </div>
+
+    <a class="button" href="https://store.steampowered.com/app/1611600/WARNO/">
+        Steam Page
+    </a>
+
+    <a class="button" href="https://eugensystems.com">
+        Eugen Systems' Page
+    </a>
+
+
+</div>
+
+<h2>Context and role</h2>
+
+<div class="paragraph">
+I got hired for an internship as a full time Level builder and designer at Eugen Systems. 
+I worked on WARNO's maps that got released after Early Access. 
+</br></br>
+My work spanned throughout all stages of map production, from shaping the forests and roads, to creating new structures. 
+I have extensively worked with 3D creation and designing tools. 
+</div>
+
+<h2>The Game</h2>
+
+<div class="paragraph">
+"Realistic, immersive, breathtaking. WARNO is the ultimate World War III battle simulator from the masters of strategy, Eugen Systems. 
+A Cold War turns decisively hot as you command hundreds of units on a beautiful and brutal battlefield. 
+Outsmart, outfight, and lead your forces to total victory."
+</br></br>
+Deploy into an authentic, expansive, and meticulously researched Cold War real-time strategy game with WARNO. 
+As the spiritual successor to the acclaimed Wargame series, WARNO is the ultimate next-gen World War III battle simulator. 
+</br></br>
+Two years have passed since Gorbachev's overthrow in a coup by hardline communists, and now, in the dark summer days of 1989, the Cold War finally turns hot. 
+The armies of NATO and Warsaw Pact have deployed in a divided and tense Germany. Conflict is imminent. The only thing left is to wait for the inevitable Warning Order that will begin it all. War is coming home, commanders…
+</br></br>
+WARNO - Warning Order - lets you command your customized battlegroup and lead hundreds of Cold War-era units to victory on dynamic, tactical battlefields. 
+Choose between the arsenals of NATO or the Warsaw Pact, and fight across a multitude of solo and online modes against challenging AI or human opponents in massive 10v10 battles. 
+Show your mettle as a strategic commander in the turn-based Army General campaigns depicting a devastating, techno-thrilling World War III in Western Europe.
+</div>

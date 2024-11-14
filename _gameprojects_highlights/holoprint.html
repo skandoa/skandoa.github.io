@@ -1,0 +1,64 @@
+---
+name: "Holoprint 3D"
+filename: "holoprint"
+imgname: "holoprint.png"
+type: ["VR/AR/MR","eLearning"]
+platform: ["Hololens 2"]
+description: "The app is about learning how to use a Ultimaker 3 3D Printer. This is an app on the Hololens 2, a mixed reality device by Microsoft."
+layout: post
+---
+<div style="display: flex; flex-direction: row; gap:4em; justify-content: center;">
+
+    <div style="display: flex; flex-direction:column; gap:2px">
+        <div style="font-family: Montserrat, sans-serif; color:white;">
+            Type
+        </div>
+        <p class="paragraph" style="width:fit-content; margin: 0px;">     
+            {% for t in page.type %}
+            {{ t }}{% if forloop.index != page.type.size %}, </nobr> {% endif %}
+            {% endfor %}
+        </p>
+    </div>
+
+    <div style="display: flex; flex-direction:column; gap:2px">
+        <div style="font-family: Montserrat, sans-serif; color:white;">
+            Platform
+        </div>
+        <p class="paragraph" style="width:fit-content; margin: 0px;">     
+            {% for p in page.platform %}
+            {{ p }}{% if forloop.index != page.platform.size %}, </nobr> {% endif %}
+            {% endfor %}
+        </p>
+    </div>
+
+</div>
+<div style="display: flex; justify-content: center; margin: 2em; ">
+    <video preload controls onclick="this.play();" style="border: 2px dashed #00bf63 ;">
+        <source src="assets\videos\holoprint\presentation.mp4" type="video/mp4">
+    </video>
+</div>
+
+<h2> Context </h2>
+<div class="paragraph">
+    For my first year of Master's Degree, my main project was about creating an app on the Hololens 2, a mixed reality device by Microsoft. The app had to provide the user with a simple, but concrete and usable skill.
+</div>
+
+<h2>The App</h2>
+<div class="paragraph">
+
+    The app is about learning how to use a Ultimaker 3 3D Printer. The steps include :
+</br></br>
+    - Changing / Replacing / Removing the ink</br>
+    - Navigating through the interface</br>
+    - Printing an item thanks to an USB drive</br></br>
+
+    Additional functions will be added as we exit the prototype phase.
+    
+</div>
+
+<h2>My role </h2>
+<div class="paragraph">
+
+    I have designed the interactions, the use cases, the UI, and managed the QA testing of our prototype. 
+    I have used Miro in order to make comprehensive trees that go through every detail of each interaction.
+</div>

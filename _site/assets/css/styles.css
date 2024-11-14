@@ -86,4 +86,26 @@ a {
   color: #00bf63;
 }
 
+h2 {
+  color: white;
+  font-size: 3em;
+}
+
+a.button {
+  text-align: justify;
+  color: white;
+  font-size: 1.5em;
+  padding: 1em;
+  border: 2px dashed #00bf63;
+  border-radius: 10px;
+  background-color: #301469;
+}
+
+a.button:hover {
+  background-color: #46336d;
+}
+
+/*
+*/
+
 /*# sourceMappingURL=styles.css.map */

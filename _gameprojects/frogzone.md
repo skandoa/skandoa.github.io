@@ -1,9 +1,0 @@
----
-name: "Frogzone"
-filename: "frogzone"
-imgname: "frogzone.webp"
-type: ["Game jam","Web"]
-platform: ["Web"]
-description: "This game was made for the 2021 Game Maker's Toolkit game jam joined by more than 20k people. The theme was Joined Together."
----
-Ted has been eating fruit since he was baby.
